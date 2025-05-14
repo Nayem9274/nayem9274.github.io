@@ -22,7 +22,7 @@ repository               : "https://github.com/Nayem9274/nayem9274.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/Nayem.jpeg"
+  avatar           : "nayem9274.github.io/images/Nayem.jpeg"
   name             : "Abdullah Nayem Wasi Emran"
   pronouns         : # example: "she/her"  
   bio              : "Hello, I'm Abdullah Nayem Wasi Emran. I have completed my Bachelor's degree in Computer Science & Engineering at Bangladesh University of 
