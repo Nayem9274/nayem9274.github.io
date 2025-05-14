@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : " "
   location         : "Dhaka, Bangladesh"
-  employer: "[BRAC University](https://www.bracu.ac.bd)"
+  employer: <a href="https://www.bracu.ac.bd" target="_blank">BRAC University</a>
   uri              : # URL
   email            : "abdullahnayem9274@gmail.com" 
 
