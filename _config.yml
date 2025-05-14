@@ -25,9 +25,7 @@ author:
   avatar           : "Nayem.jpeg"
   name             : "Abdullah Nayem Wasi Emran"
   pronouns         : # example: "she/her"  
-  bio              : "Hello, I'm Abdullah Nayem Wasi Emran. I have completed my Bachelor's degree in Computer Science & Engineering at Bangladesh University of 
-  Engineering & Technology (BUET). My research interests span Medical Imaging, Computational Biology, Bioinformatics, Data Mining, and Machine Learning. 
-  I am passionate about leveraging data and technology to solve complex problems, particularly in healthcare and biological sciences."
+  bio              : #
   location         : "Dhaka, Bangladesh"
   employer         : "BRAC University"
   uri              : # URL
