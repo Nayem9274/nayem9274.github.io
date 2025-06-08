@@ -3589,12 +3589,23 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   /* --- ClustrMaps tuning ----------------------------------------------- */
-#map-wrap canvas {           /* the map is drawn on a canvas element  */
-  width: 100% !important;    /* makes it responsive inside #map-wrap  */
-  height: auto !important;
-  filter: grayscale(1) invert(1);   /* white land on black ocean      */
+
+#map-wrap {
+  max-width: 550px;          /* shrink on desktop                      */
+  margin: 40px auto 60px;    /* 40 px top, 60 px bottom for breathing   */
+  overflow: hidden;          /* hide scrollbars if any                  */
 }
+
+/* Both the base map (<img>) and the dots layer (<canvas>) */
+#map-wrap img,
+#map-wrap canvas {
+  width: 100% !important;
+  height: auto !important;
+  filter: grayscale(1) invert(1) contrast(1.2);
+  /*  → white ocean, black land, green dots pop              */
+}
+
+/* optional: hide the tiny powered-by overlay */
 #map-wrap div[style*="position: absolute"] {
-  /* hide the tiny "clustrmaps.com" overlay, optional                  */
-  display:none;
+  display: none;
 }
