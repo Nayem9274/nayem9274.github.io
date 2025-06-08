@@ -3587,25 +3587,3 @@ textarea.form-input::-webkit-resizer { display: none; }
     .timeline-text { max-width: 700px; }
   
   }
-
-  /* --- ClustrMaps tuning ----------------------------------------------- */
-
-#map-wrap {
-  max-width: 550px;          /* shrink on desktop                      */
-  margin: 40px auto 60px;    /* 40 px top, 60 px bottom for breathing   */
-  overflow: hidden;          /* hide scrollbars if any                  */
-}
-
-/* Both the base map (<img>) and the dots layer (<canvas>) */
-#map-wrap img,
-#map-wrap canvas {
-  width: 100% !important;
-  height: auto !important;
-  filter: grayscale(1) invert(1) contrast(1.2);
-  /*  → white ocean, black land, green dots pop              */
-}
-
-/* optional: hide the tiny powered-by overlay */
-#map-wrap div[style*="position: absolute"] {
-  display: none;
-}
