@@ -1009,6 +1009,40 @@
         </div>
       </li>
 
+	  <!-- SCOPES: Cross-Platform Gene Signature Selection -->
+	  <li class="blog-post-item">
+		  <figure class="blog-banner-box">
+			<img src="./assets/images/platform_scatter_runB_part1.png"
+				 alt="SCOPES: per-gene Agilent vs RNA-Seq agreement (Run B subset)"
+				 loading="lazy">
+		  </figure>
+		
+		  <div class="blog-content">
+			<div class="blog-meta">
+			  <p class="blog-category">Bioinformatics</p><span class="dot"></span>
+			  <p class="blog-category">Machine Learning</p><span class="dot"></span>
+			  <p class="blog-category">Feature Selection</p>
+			</div>
+		
+			<h3 class="h3 blog-item-title">SCOPES: Stability-Aware Cross-Platform Feature Selection for Matched TCGA Gene Expression and RNA-Seq Data</h3>
+			<!-- Replace '#' with your repo or paper link -->
+			<a href="#https://github.com/Nayem9274/SCOPES" target="_blank">[Code]</a>
+		
+			<p class="blog-text">
+			  Built a leak-free, multi-objective pipeline to learn small, stable gene signatures on
+			  Agilent microarrays that transfer to RNA-Seq without re-training. SCOPES uses an
+			  unsupervised MAD slab and NSGA-II to balance three goals: AUC (accuracy), Kuncheva
+			  stability, and cross-platform alignment (MMD). On matched TCGA-BRCA (505 tumor / 25
+			  normal), the “alignment-first” solution (1 gene) achieved AUC<sub>Agilent</sub>≈0.69,
+			  AUC<sub>RNA-Seq</sub>≈0.61 (ΔAUC≈−0.08), while a richer 30-gene set reached near-perfect
+			  source AUC but transferred poorly (AUC<sub>RNA-Seq</sub>≈0.62, ΔAUC≈−0.38). The figure shows
+			  per-gene platform agreement—panels near the diagonal align well; diffuse panels reveal
+			  platform mismatch that inflates MMD and hurts transfer.
+			</p>
+		  </div>
+	   </li>
+		
+
       <!-- Lightweight Cancer-Cell Classifier -->
       <li class="blog-post-item">
         <figure class="blog-banner-box">
