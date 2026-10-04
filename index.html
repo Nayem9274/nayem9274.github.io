@@ -579,30 +579,86 @@
           <ol class="timeline-list">
 
 
-             <!--  ▸ RNA-Protein Interaction -->
+             <!-- ▸ RNA-Protein Interaction: Biological Novelty & Generalization -->
 
-			  
-			<li class="timeline-item">
+				<li class="timeline-item">
 				  <h4 class="h4 timeline-item-title">
-				    Efficient RNA–Protein Interaction Prediction with Foundation-Model Embeddings
+				    Biological Novelty and Generalization in RNA–Protein Interaction Prediction
 				  </h4>
 				  <span>May&nbsp;2025 – Present</span>
+				
 				  <div class="blog-meta">
 				    <p class="blog-category">Bioinformatics</p><span class="dot"></span>
 				    <p class="blog-category">Computational&nbsp;Biology</p><span class="dot"></span>
-				    <p class="blog-category">Deep&nbsp;Learning</p>
+				    <p class="blog-category">Foundation&nbsp;Models</p>
 				  </div>
+				
 				  <p class="timeline-text">
-				  I am conducting an ongoing research project under 
-				  <a href="https://cse.buet.ac.bd/faculty/faculty_detail/mrahman" target="_blank" style="display:inline;">Dr.&nbsp;Mohammad&nbsp;Saifur&nbsp;Rahman</a>, 
-				  on computational prediction of RNA–protein interactions. 
-				  The work introduces a cold-start evaluation protocol—covering RNA-cold, protein-cold, and cross-dataset settings—to better reflect real-world discovery scenarios where molecules are unseen during training. 
-				  Using frozen embeddings from RNA-FM and ProtT5, I have implemented and compared lightweight embedding-only models (including PairMLP variants with cross-attention) against graph-refinement architectures such as LightGCN and GraphSAGE. 
-				  Our findings show that embedding-only cross-attention models consistently outperform graph-based refinements under cold-start conditions, achieving state-of-the-art results on benchmarks like NPInter2, RPI7317, and TheNovel. 
-				  This project highlights the importance of evaluation protocols as much as architectural choices, and aims to establish scalable, reproducible baselines for RNA–protein interaction prediction that can accelerate biological discovery.
-				</p>
+				    I am conducting my M.Sc. thesis under
+				    <a href="https://cse.buet.ac.bd/faculty/faculty_detail/mrahman"
+				       target="_blank" style="display:inline;">
+				      Dr.&nbsp;Mohammad&nbsp;Saifur&nbsp;Rahman
+				    </a>
+				    on biological generalization in RNA–protein interaction (RPI) prediction.
+				    Rather than treating an ``unseen'' molecule as a single condition, the project studies increasingly
+				    strict forms of novelty, including exact unseen RNAs/proteins, unseen sequence families, and
+				    independent external data.
+				
+				    We evaluate 21 combinations of RNA and protein foundation-model representations and study how
+				    representation choice affects generalization under protein-family shift. The analysis shows that
+				    strong representation pairs remain broadly reproducible across independent family-held partitions,
+				    while representation effects can cross molecular boundaries. We also biologically stratified the
+				    external TheNovel benchmark and found that 59.3% of its interactions are family-novel on both
+				    molecular sides, where prediction performance drops substantially compared with the overall benchmark.
+				
+				    The work further examines when interaction-graph topology contributes useful information, showing
+				    that graph-based refinement provides context-dependent rather than universally transferable gains
+				    across representation pairs and biologically annotated RBP contexts. An earlier stage of this work
+				    was accepted at the PM4B Workshop, IEEE ICDM 2026.
+				  </p>
 				</li>
-
+				
+				
+				<!-- ▸ Reliable / Failure-Risk RPI -->
+				
+				<li class="timeline-item">
+				  <h4 class="h4 timeline-item-title">
+				    Failure-Risk Estimation for RNA–Protein Interaction Prediction
+				  </h4>
+				  <span>2026 – Present</span>
+				
+				  <div class="blog-meta">
+				    <p class="blog-category">Reliable&nbsp;AI</p><span class="dot"></span>
+				    <p class="blog-category">Bioinformatics</p><span class="dot"></span>
+				    <p class="blog-category">Uncertainty&nbsp;&amp;&nbsp;Generalization</p>
+				  </div>
+				
+				  <p class="timeline-text">
+				    I am also working with
+				    <a href="https://cse.buet.ac.bd/faculty/faculty_detail/mrahman"
+				       target="_blank" style="display:inline;">
+				      Dr.&nbsp;Mohammad&nbsp;Saifur&nbsp;Rahman
+				    </a>
+				    and
+				    <a href="https://cse.buet.ac.bd/faculty/faculty_detail/alimrazi"
+				       target="_blank" style="display:inline;">
+				      Dr.&nbsp;A.&nbsp;B.&nbsp;M.&nbsp;Alim&nbsp;Al&nbsp;Islam
+				    </a>
+				    on estimating when an individual protein-cold RPI prediction is likely to fail.
+				
+				    The framework treats prediction failure as a secondary learning problem and uses prediction-time
+				    information such as threshold-aligned decision certainty, RNA training support, and RNA/protein
+				    embedding familiarity. Across four RPI systems and three benchmark datasets, we found that
+				    pair-grouped evaluation can still leak protein identity and substantially overestimate failure-risk
+				    performance; failure AUROC drops by 0.094–0.262 when the secondary evaluation is made
+				    protein-disjoint.
+				
+				    Engineered prediction-time features improve failure AUROC by as much as 0.240 in some settings,
+				    and the resulting risk score can provide a complementary signal for selective prediction and
+				    pre-validation triage. The goal is not to replace experimental validation, but to identify predictions
+				    that deserve greater confidence, review, or prioritization before laboratory testing.
+				  </p>
+				</li>
 			      <!--  ▸ DANN Study-->
 			  
 			  	<li class="timeline-item">
