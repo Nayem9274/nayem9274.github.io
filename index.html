@@ -206,27 +206,62 @@
           <h2 class="h2 article-title">About me</h2>
         </header>
 
-      <section class="about-text">
-		<p>
-		  I'm <b>Abdullah Nayem Wasi Emran</b>, currently working as a Lecturer at the 
-		  <a href="https://www.bracu.ac.bd/academics/departments/computer-science-and-engineering" target="_blank" style="display: inline;">Department of Computer Science and Engineering</a> of 
-		  <a href="https://www.bracu.ac.bd/" target="_blank" style="display: inline;">Brac University</a>. I completed my Bachelor's degree in Computer Science and Engineering from 
-		  <a href="https://www.buet.ac.bd/web/#/" target="_blank" style="display: inline;">Bangladesh University of Engineering and Technology (BUET)</a>.
-		  <br><br>
-		
-		My research primarily focuses on <b>Bioinformatics</b>, <b>Computational Biology</b>, and <b>AI/ML for Healthcare</b>. I am especially interested in building reliable learning pipelines for biological and medical data, where models must generalize across datasets, platforms, and populations rather than perform well only in controlled benchmark settings. <br><br>
-		
-		My current work investigates <b>RNA–protein interaction prediction</b> using biological foundation-model embeddings and cold-start evaluation. In this direction, our project, <i>A Cold-Start Benchmark and Architectural Diagnosis for RNA-Protein Interaction Prediction</i>, studies whether graph-refinement models truly improve generalization to unseen RNAs, unseen proteins, and external datasets. The broader goal is to design computational methods that are useful for biological discovery, not just transductive benchmark interpolation. <br><br>
-		
-		<!-- I also work on cross-dataset robustness in healthcare and mental-health modeling. My paper <a href="https://www.cell.com/iscience/fulltext/S2589-0042(26)01402-1" target="_blank" style="display: inline;"><i>Domain Adaptive Uplift Modeling across Heterogeneous Mental Health Cohorts</i></a>, published in <i>iScience</i> (2026), studies domain-adaptive and fairness-aware uplift modeling for stress-related deterioration across heterogeneous cohorts. Earlier, I led a cross-dataset mental-health study published in <a href="https://doi.org/10.1057/s41599-025-05053-x" target="_blank" style="display: inline;"><i>Humanities & Social Sciences Communications</i></a> (2025), analyzing demographic and contextual patterns across medical students, quarantined individuals, and psychiatric-disordered subjects. <br><br>
-		
-		On the bioinformatics side, our <b>SCOPES</b> work, accepted to the <a href="https://aaai.org/aaai-conference/" target="_blank" style="display: inline;">AAAI-26 AI2ASE Workshop</a>, proposes stability-aware, cross-platform feature selection for matched TCGA microarray and RNA-seq data. Instead of chasing fragile platform-specific signatures, SCOPES aims to identify reproducible gene markers that remain useful under measurement shift. <br><br>
-		 -->
-		Broadly, I care about <b>robust, causal, and fair machine learning</b> for biomedical problems: treatment-effect modeling, subgroup analysis, cold-start generalization, cross-platform biomarker discovery, and evaluation protocols that expose when apparent model gains fail to transfer. My goal is to develop simple, principled, and reproducible pipelines that can support healthcare and biological discovery in low-resource settings without requiring exotic infrastructure.
-		
-		</p>
+<section class="about-text">
+  <p>
+    Hi, I'm <b>Abdullah Nayem Wasi Emran</b>, a Lecturer in Computer Science and Engineering at
+    <a href="https://www.bracu.ac.bd/" target="_blank" style="display: inline;">
+      Brac University
+    </a>
+    and an M.Sc. researcher at
+    <a href="https://www.buet.ac.bd/web/#/" target="_blank" style="display: inline;">
+      Bangladesh University of Engineering and Technology (BUET)
+    </a>,
+    where I previously completed my B.Sc. in Computer Science and Engineering.
+    My work lies at the intersection of <b>computational biology</b>,
+    <b>bioinformatics</b>, and <b>machine learning for healthcare</b>,
+    with a particular focus on reliable generalization under biological and dataset shift.
+    <br><br>
 
-      </section>
+    My current research focuses on <b>RNA–protein interaction prediction</b>,
+    especially how predictive models behave when test molecules are biologically novel rather than
+    merely absent from the training set. I study exact cold-start generalization, sequence-family shift,
+    external transfer, biological foundation-model representations, and when interaction-graph topology
+    adds useful information.
+    <br><br>
+
+    In my M.Sc. thesis, I am developing a controlled framework for studying
+    <b>biological novelty and generalization in RNA–protein interaction prediction</b>.
+    The work moves beyond standard exact molecule holdout by evaluating increasingly strict settings,
+    including unseen sequence families and independent external data. It also examines how different
+    RNA and protein foundation-model representations behave under these shifts, how representation
+    effects cross molecular boundaries, and when graph-based refinement contributes useful signal.
+    An earlier stage of this work was accepted at the PM4B Workshop, IEEE ICDM 2026.
+    <br><br>
+
+    In parallel, I am working on <b>reliability-aware RNA–protein interaction prediction</b>,
+    where the goal is not only to predict whether an RNA and protein interact, but also to estimate
+    when an individual prediction is likely to fail. This work studies prediction-time signals such as
+    model certainty, RNA training support, and embedding familiarity, and evaluates them under
+    protein-disjoint settings so that reliability estimates themselves are not inflated by hidden entity
+    overlap. The broader aim is to support more reliable prioritization of predictions before downstream
+    experimental validation.
+    <br><br>
+
+    Beyond RNA–protein interaction modeling, I also work on
+    <b>robust, causal, and fair machine learning for biomedical problems</b>.
+    My previous research includes domain-adaptive and fairness-aware uplift modeling across
+    heterogeneous mental-health cohorts, cross-dataset mental-health analysis, and cross-platform
+    gene-signature selection for matched microarray and RNA-seq data.
+    <br><br>
+
+    Broadly, I am interested in building simple, principled, and reproducible computational methods
+    that remain useful across datasets, populations, measurement platforms, and biological contexts
+    rather than performing well only under controlled benchmark conditions. My long-term goal is to
+    develop machine learning and bioinformatics tools that can support biological discovery and
+    healthcare applications, particularly in settings where computational resources and experimental
+    capacity are limited.
+  </p>
+</section>
 <!--         
         <section class="about-text">
           <div class="slideshow-container">
